@@ -32,8 +32,4 @@ def main():
         print(f"{num} is even.")
     else:
         print(f"{num} is odd.")
-
-
-# Run the program
-if __name__ == "__main__":
-    main()
+main()
