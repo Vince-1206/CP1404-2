@@ -2,17 +2,12 @@
 CP1404/CP5632 - Practical
 Refactored temperature conversion program
 """
-def celsius_to_fahrenheit(celsius):
-    """Convert Celsius to Fahrenheit."""
-    return celsius * 9.0 / 5 + 32
-def fahrenheit_to_celsius(fahrenheit):
-    """Convert Fahrenheit to Celsius."""
-    return 5 / 9 * (fahrenheit - 32)
 def main():
-    MENU = """C - Convert Celsius to Fahrenheit
+    """Show a simple temperature conversion menu until the user quits."""
+    menu = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
 Q - Quit"""
-    print(MENU)
+    print(menu)
     choice = input(">>> ").upper()
     while choice != "Q":
         if choice == "C":
@@ -23,7 +18,18 @@ Q - Quit"""
             print(f"Result: {fahrenheit_to_celsius(fahrenheit):.2f} C")
         else:
             print("Invalid option")
-        print(MENU)
+        print(menu)
         choice = input(">>> ").upper()
     print("Thank you.")
+
+
+def celsius_to_fahrenheit(celsius: float) -> float:
+    """Convert Celsius to Fahrenheit and return the result."""
+    return celsius * 9.0 / 5 + 32
+
+
+def fahrenheit_to_celsius(fahrenheit: float) -> float:
+    """Convert Fahrenheit to Celsius and return the result."""
+    return 5 / 9 * (fahrenheit - 32)
+
 main()
