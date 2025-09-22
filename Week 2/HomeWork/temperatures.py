@@ -1,6 +1,7 @@
 """
-CP1404/CP5632 - Practical
-Refactored temperature conversion program
+CP1404 - Practical
+Lin Han-Wei
+
 """
 def main():
     """Show a simple temperature conversion menu until the user quits."""

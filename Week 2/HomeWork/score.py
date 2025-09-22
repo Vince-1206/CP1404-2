@@ -1,6 +1,7 @@
 """
-CP1404/CP5632 - Practical
-Fixed program to determine score status
+CP1404 - Practical
+Lin Han-Wei
+
 """
 
 import random

@@ -1,3 +1,8 @@
+"""
+CP1404 - Practical
+Lin Han-Wei
+
+"""
 print("Hello World")
 """My password is Vince0689"""
 MIN_PASSWORD_LENGTH = 8

@@ -1,6 +1,7 @@
 """
-CP1404/CP5632 - Practical
-Score menu program with functions
+CP1404 - Practical
+Lin Han-Wei
+
 """
 MENU = """(G)et a valid score
 (P)rint result
