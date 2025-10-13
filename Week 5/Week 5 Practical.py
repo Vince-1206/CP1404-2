@@ -117,6 +117,7 @@ print(f"{'Intersection' :21} :", my_subjects & your_subjects)
 print(f"{'Symmetric difference' :21} :", my_subjects ^ your_subjects)
 """
 
+"""
 def string_lengths(strings):
     lengths = {}
     for word in strings:
@@ -126,4 +127,12 @@ def string_lengths(strings):
 words = ["Youtube", "VINCE", "Bottle"]
 result = string_lengths(words)
 print(result)
+"""
 
+import csv
+
+with open("countries.csv") as in_file:
+    reader = csv.reader(in_file)
+    next(reader)
+    for record in reader:
+        print(record)
