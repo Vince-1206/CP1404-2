@@ -107,6 +107,7 @@ for word in words:
         print(word, word_to_count[word])
 """
 
+"""
 my_subjects = {"CP1401", "CP1404", "MA1000"}
 your_subjects = {"CP1401", "MN1010", "MA1008"}
 
@@ -114,3 +115,5 @@ print(f"{'union' : 21} :", my_subjects | your_subjects)
 print(f"{'difference' :21} : ", my_subjects - your_subjects)
 print(f"{'Intersection' :21} :", my_subjects & your_subjects)
 print(f"{'Symmetric difference' :21} :", my_subjects ^ your_subjects)
+"""
+
