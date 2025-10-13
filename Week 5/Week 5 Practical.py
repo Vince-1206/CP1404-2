@@ -117,3 +117,13 @@ print(f"{'Intersection' :21} :", my_subjects & your_subjects)
 print(f"{'Symmetric difference' :21} :", my_subjects ^ your_subjects)
 """
 
+def string_lengths(strings):
+    lengths = {}
+    for word in strings:
+        lengths[word] = len(word)
+    return lengths
+
+words = ["apple", "banana", "kiwi"]
+result = string_lengths(words)
+print(result)
+
