@@ -51,6 +51,7 @@ for i in range(len(name_and_age)):
     
 """
 
+"""
 name_and_age = {"Bill": 21, "Jane": 34, "Sven": 56}
 print(name_and_age.keys())
 print(name_and_age.values())
@@ -63,3 +64,53 @@ for key in name_and_age:
 
 for key in name_and_age:
     print(f"{key} is {name_and_age[key]}")
+
+for key, value in name_and_age.items():
+    if value > 50:
+        print(key, value)
+
+for name, age in name_and_age.items():
+    print(f"{name} is {age}")
+    
+for name, age in name_and_age.items():
+    if age == max(name_and_age.values()):
+        print(f"{name} is {age}")
+
+print(list(name_and_age.keys()))
+print(name)
+
+"""
+
+"""
+name_to_age = {"Bill": 21, "Jane": 34, "Sven": 56}
+
+print(name_to_age)
+
+name = input("Enter name:")
+age = int(input("Enter age:"))
+
+name_to_age[name] = age
+
+print(name_to_age)
+"""
+
+"""
+word_to_count = {"apple": 8, "Kiwi": 4}
+words = ["apple", "orange"]
+
+for word in words:
+    if word in word_to_count:
+        word_to_count[word] = word_to_count[word] + 1
+        print(word,word_to_count[word])
+    else:
+        word_to_count[word] = 1
+        print(word, word_to_count[word])
+"""
+
+my_subjects = {"CP1401", "CP1404", "MA1000"}
+your_subjects = {"CP1401", "MN1010", "MA1008"}
+
+print(f"{'union' : 21} :", my_subjects | your_subjects)
+print(f"{'difference' :21} : ", my_subjects - your_subjects)
+print(f"{'Intersection' :21} :", my_subjects & your_subjects)
+print(f"{'Symmetric difference' :21} :", my_subjects ^ your_subjects)
