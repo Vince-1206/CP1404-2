@@ -123,7 +123,7 @@ def string_lengths(strings):
         lengths[word] = len(word)
     return lengths
 
-words = ["apple", "banana", "kiwi"]
+words = ["Youtube", "VINCE", "Bottle"]
 result = string_lengths(words)
 print(result)
 
