@@ -1,8 +1,19 @@
+# data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantanelle', 9]]
+#
+# name_width = max((len(pair[0]) for pair in data))
+# score_width = max((len(str(pair[1])) for pair in data))
+#
+# print(name_width)
+# print(score_width)
+#
+# for pair in data:
+#     name, score = pair
+#     print(f"{name:{name_width}} = {score:{score_width}}")
+
 data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantanelle', 9]]
+name_width = max((len(pair[0]) for pair in data))
+score_width = max((len(str(pair[1])) for pair in data))
 
-sorted_data = sorted(data, key=lambda item: item[1], reverse=True)
-
-max_len = max(len(name) for name, score in sorted_data)
-
-for name, score in sorted_data:
-    print(f"{name:<{max_len}} = {score}")
+for pair in data:
+    name, score = pair
+    print(f"{name:{name_width}} = {score:{score_width}}")
