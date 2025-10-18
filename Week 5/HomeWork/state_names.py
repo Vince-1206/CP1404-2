@@ -21,8 +21,6 @@ for code, name in CODE_TO_NAME.items():
 
 state_code = input("Enter short state: ").strip().upper()
 while state_code:
-    try:
-        print(f"{state_code} is {CODE_TO_NAME[state_code]}")
-    except KeyError:
-        print("Invalid short state")
+    print(f"{state_code} is {CODE_TO_NAME.get(state_code, 'Invalid short state')}")
     state_code = input("Enter short state: ").strip().upper()
+

@@ -23,6 +23,10 @@ def print_sorted_word_counts(word_counts):
         print(f"{word:{longest_word_length}} : {word_counts[word]}")
 
 if __name__ == "__main__":
-    text = input("Text: ")
-    word_counts = count_word_occurrences(text)
-    print_sorted_word_counts(word_counts)
+    text = input("Text: ").strip()
+    if text:
+        word_counts = count_word_occurrences(text)
+        print_sorted_word_counts(word_counts)
+    else:
+        print("No text entered.")
+

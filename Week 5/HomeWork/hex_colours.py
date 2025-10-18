@@ -5,7 +5,7 @@ Actual:
 """
 
 HEX_COLOURS = {
-    "Amber": "#FFb00",
+    "Amber": "#FFBF00",
     "AntiqueWhite": "#FAEBD7",
     "Aqua": "#00FFFF",
     "Aquamarine": "#7FFFD4",

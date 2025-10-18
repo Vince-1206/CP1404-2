@@ -45,8 +45,8 @@ def main():
     countries = get_countries(data)
 
     print("Wimbledon Champions:")
-    for champion, wins in sorted(champions.items()):
-        print(f"{champion} {wins}")
+    for champion, wins in sorted(champions.items(), key=lambda item: item[1], reverse=True):
+        print(f"{champion:20} {wins}")
 
     print("\nThese", len(countries), "countries have won Wimbledon:")
     print(", ".join(sorted(countries)))
