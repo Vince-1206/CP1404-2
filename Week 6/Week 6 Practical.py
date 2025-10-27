@@ -11,7 +11,7 @@ scary_monsters = [monster for monster in monsters if monster[TEETH_INDEX] > 16]
 print(scary_monsters)
 
 """
-
+"""
 class Monster:
     def __int__ (self, name, scariness, color):
         self.name = name
@@ -31,3 +31,7 @@ scary_monsters = [monster for monster in monsters if monster.is_scary()]
 
 for m in scary_monsters:
     print(m.name)
+
+"""
+
+
