@@ -1,3 +1,5 @@
+
+"""
 TEETH_INDEX = 1
 
 monsters = [["Mike", 340, "blue"],
@@ -7,3 +9,6 @@ monsters = [["Mike", 340, "blue"],
 scary_monsters = [monster for monster in monsters if monster[TEETH_INDEX] > 16]
 
 print(scary_monsters)
+
+"""
+
