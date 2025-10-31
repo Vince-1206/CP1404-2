@@ -20,6 +20,7 @@ def main():
         print(f"{guitar} added.\n")
         name = input("Name: ")
 
+
     print("\nThese are my guitars:")
     for i, guitar in enumerate(guitars, 1):
         vintage_string = " (vintage)" if guitar.is_vintage() else ""
